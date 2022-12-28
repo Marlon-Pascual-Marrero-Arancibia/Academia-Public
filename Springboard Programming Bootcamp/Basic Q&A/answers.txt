@@ -1,0 +1,5 @@
+1. git branch <newBranch>
+2. FFWD merges can only happen if no new commits are on the original branch while the new branch is being worked on.
+3. git checkout
+4. git branch with the -d flag
+5. When commits are made which use the same file and change the same file.
