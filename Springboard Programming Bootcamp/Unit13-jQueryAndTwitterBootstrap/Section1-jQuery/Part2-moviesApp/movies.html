@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="movieTitle">
+        <input type="number" id="movieRating">
+        <input type="submit" style="font-size: 15px" id="submit"></button>
+    </form>
+    <section>
+        
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        let movies = 0;
+
+        $("input#submit").on("click", (evnt) => 
+        {
+            evnt.preventDefault();
+
+            const movieStats = $('input').map(function(idx, elem) {
+            return $(elem).val();
+            }).get();
+
+            if (movieStats[1] > 10)
+            {
+                alert("maximum rating 10")
+            } else if (movieStats[1] < 0)
+            {
+                alert("minimum rating 0")
+            } else {
+
+            $("section").append(`<span><p>Movie: ${movieStats[0]}</p><p>Rating: ${movieStats[1]}</p><button style="font-size: 15px" id="${movies}">⠀</button></span>`)
+            movies++;
+            }
+        })
+
+        $("section").on("click", (evnt) => 
+        {
+            if(evnt.target.id.length !== 0)
+            {
+                evnt.target.parentElement.remove();
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+This is a folder where I will create all the files and folders nested here from inside of the terminal. I've made all of the Unit6 folders and files in the terminal, and this file was made usign echo "" > read.txt to be made
+
+I have created the answers.txt file by using \n to create new lines and added all of the questions as one line with echo insertion into the questions.txt file.

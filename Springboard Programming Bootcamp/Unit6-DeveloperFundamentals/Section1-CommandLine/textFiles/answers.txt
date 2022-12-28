@@ -1,0 +1,9 @@
+1. The man command is short for the manual on a given command.
+2. The -l flag is for long listing format, and the -s is for the size (in blocks) of everything to be output as well.
+3. You can jump between the words using Ctl+Arrows or Alt+arrows.
+4. You can quickly get to the end of the current terminal line with ctrl+e
+5. You can get to the beginning of the line with Ctrl+a
+6. You can delete the word by using ctrl+w
+7. The difference between a terminal and a shell is that a terminal is an interface for the shell, where the terminal runs the shell and we interact with the shell by using the terminal
+8 & 9. An absolue path is the path of a file in question from the root directory, and a relative path is one where the file is shown relative to your current working directory. For example, cd .. is a relative path because it'll move you one directory up from where you currently are, but that dirrectories absoleu path might be /users/yourUser/directoryAbove/currentDirectory
+10 & 11. A flag is an additional statement you can provide to any command to do extra steps or functions, such as echo -e allows \n to be understood as new line whereas without the -e it'll simply be shown as \n but it will continue to keep everything on one line. Another flag I've used is the -r and -f flags when I was using the rm command to complete some of the steps I needed to do in Part 1 of this assignment, where those flags are used to recursively remove the files inside of a directory and then be able to delete the directory.

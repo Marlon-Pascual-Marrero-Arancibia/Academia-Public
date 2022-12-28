@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="disable-select">
+        <span class="letter">H</span>
+        <span class="letter">E</span>
+        <span class="letter">L</span>
+        <span class="letter">L</span>
+        <span class="letter">O</span>
+    </h1>
+    <style>
+        .disable-select 
+        {
+            user-select: none; /* supported by Chrome and Opera */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+        }
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+            background-color: black;
+        }
+
+        h1
+        {
+            font-size: 15rem;
+        }
+
+        .letter 
+        {
+            transition: color 1000ms;
+        }
+    </style>
+
+    <script src="colorChangerMousePosition.js"></script>
+</body>
+</html>

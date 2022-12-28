@@ -1,0 +1,8 @@
+What is the difference between var and let?
+    - var is deprecated, and is able to be accessed globally. It is also able to be re-declared.
+What is the difference between var and const?
+    - var is deprecated, and able to be re-declared and re-assigned after being assigned.
+What is the difference between let and const?
+    - let is able to be changed affter assignment, const is not.
+What is hoisting?
+    - It is how the JS compiler will process other things such as fuunction declarations and var before everything else.
